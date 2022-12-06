@@ -48,3 +48,4 @@ while(letsPlay == "y"):
     letsPlay = input("Do you want to play again? Enter yes or no: ")
     
 print(str(wins)+ " games won." +str(losses)+" games lost." +str(ties)+" games tied." +str(games)+" total games." )    
+#trying to get the game to continue 
