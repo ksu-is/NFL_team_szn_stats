@@ -10,7 +10,7 @@ player = False
 
 while player == False:
 #set player to True
-    player = input("rock, paper, scissors?")
+    player = input("rock, paper, scissors? or type quit to quit!")
     if player == computer:
         print("Tie!")
     elif player == "rock":
@@ -28,6 +28,8 @@ while player == False:
             print("You lose...", computer, "smashes", player)
         else:
             print("You win!", player, "cut", computer)
+    elif player == "quit":
+        print("Thank you for playing! Please come back!")
     else:
         print("That's not a valid play. Check your spelling!")
     #player was set to True, but we want it to be False so the loop continues
