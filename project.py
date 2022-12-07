@@ -10,8 +10,8 @@ letsPlay = "y"
 
 while(letsPlay == "y"):
     computer = random.randint(1,3)
-    print("computer choise: " + str(computer))
-    
+    #print("computer choise: " + str(computer))
+    #no reason to see computer choice before hand
     games = games + 1
     
     player = input("rock (1), paper (2), scissors (3) ? or type quit to quit!")
@@ -45,7 +45,7 @@ while(letsPlay == "y"):
     else:
         print("That's not a valid play. Check your spelling!")
        
-    letsPlay = input("Do you want to play again? Enter yes or no: ")
+    letsPlay = input("Do you want to play again? Enter y for yes. If not, enter anything else: ")
     
 print(str(wins)+ " games won." +str(losses)+" games lost." +str(ties)+" games tied." +str(games)+" total games." )    
 #trying to get the game to continue 
