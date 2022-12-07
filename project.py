@@ -6,9 +6,9 @@ wins = 0
 losses = 0
 ties = 0
 
-letsPlay = "y"
+letsPlay = "yes"
 
-while(letsPlay == "y"):
+while(letsPlay == "yes"):
     computer = random.randint(1,3)
     #print("computer choise: " + str(computer))
     #no reason to see computer choice before hand
@@ -45,7 +45,7 @@ while(letsPlay == "y"):
     else:
         print("That's not a valid play. Check your spelling!")
        
-    letsPlay = input("Do you want to play again? Enter y for yes. If not, enter anything else: ")
+    letsPlay = input("Do you want to play again? Enter yes or no to see stast: ")
     
 print(str(wins)+ " games won." +str(losses)+" games lost." +str(ties)+" games tied." +str(games)+" total games." )    
 #trying to get the game to continue 
